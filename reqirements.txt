@@ -1,0 +1,8 @@
+tqdm
+gitpython
+python-twitter
+scikit-image
+datajoint
+atflow
+h5py
+seaborn
