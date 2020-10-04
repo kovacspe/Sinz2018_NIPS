@@ -1,0 +1,3 @@
+[submodule "attorch"]
+	path = attorch
+	url = https://github.com/fabiansinz/attorch.git
