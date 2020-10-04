@@ -12,7 +12,7 @@ from ..utils.logging import Messager
 
 dj.config['external-file'] = dict(
     protocol='file',
-    location='/external/movie-data/')
+    location='external/movie-data/')
 
 schema = dj.schema('nips2018_data', locals())
 
@@ -40,7 +40,7 @@ class MovieScan(dj.Computed, ComputeStub):
         """
 
 
-@h5cached('/external/cache/', mode='groups', transfer_to_tmp=False,
+@h5cached('external/cache/', mode='groups', transfer_to_tmp=False,
           file_format='{animal_id}-{session}-{scan_idx}-preproc{preproc_id}.h5')
 @schema
 class InputResponse(dj.Computed, Messager):
